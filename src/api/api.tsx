@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export const API = axios.create({
-  baseURL: "https://enchanting-modern-glass.glitch.me/api",
+  baseURL: "https://selective-rightful-piper.glitch.me/api",
 });

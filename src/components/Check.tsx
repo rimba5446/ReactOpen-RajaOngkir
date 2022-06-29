@@ -79,7 +79,7 @@ const Check: FC = () => {
         <hr className="border border-black" />
         <div className="w-full bg-slate-200 p-2">
           <p className="text-2xl text-red-900 font-semibold mt-1 mb-1">
-            Kota Asal
+            Kota Pengirim
           </p>
         </div>
         <hr className="border border-black mb-3" />
@@ -90,7 +90,26 @@ const Check: FC = () => {
           name="prov1"
           id="prov1"
           onChange={(e) => getCity1(e.target.value)}
-          className="input-section"
+          className="dropdown-toggle
+          px-6
+          py-2.5
+          bg-green-500
+          text-white
+          font-medium
+          text-xs
+          leading-tight
+          uppercase
+          rounded
+          shadow-md
+          hover:bg-green-600 hover:shadow-lg
+          focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0
+          active:bg-green-700 active:shadow-lg active:text-white
+          transition
+          duration-150
+          ease-in-out
+          flex
+          items-center
+          whitespace-nowrap"
         >
           <option value="">-- Pilih Provinsi --</option>
           {provinces.map((item) => (
@@ -106,7 +125,26 @@ const Check: FC = () => {
           name="kot1"
           id="kot1"
           onChange={(e) => valAsal(e.target.value)}
-          className="input-section"
+          className="dropdown-toggle
+          px-6
+          py-2.5
+          bg-green-500
+          text-white
+          font-medium
+          text-xs
+          leading-tight
+          uppercase
+          rounded
+          shadow-md
+          hover:bg-green-600 hover:shadow-lg
+          focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0
+          active:bg-green-700 active:shadow-lg active:text-white
+          transition
+          duration-150
+          ease-in-out
+          flex
+          items-center
+          whitespace-nowrap"
         >
           <option value="">-- Pilih kota --</option>
           {cities1.map((item) => (
@@ -118,7 +156,7 @@ const Check: FC = () => {
         <hr className="border border-black mt-5" />
         <div className="w-full bg-slate-200 p-2">
           <p className="text-2xl text-red-900 font-semibold mt-1 mb-1">
-            Kota Tujuan
+            Kota Penerima
           </p>
         </div>
         <hr className="border border-black mb-3" />
@@ -129,7 +167,26 @@ const Check: FC = () => {
           name="prov2"
           id="prov2"
           onChange={(e) => getCity2(e.target.value)}
-          className="input-section"
+          className="dropdown-toggle
+          px-6
+          py-2.5
+          bg-green-500
+          text-white
+          font-medium
+          text-xs
+          leading-tight
+          uppercase
+          rounded
+          shadow-md
+          hover:bg-green-600 hover:shadow-lg
+          focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0
+          active:bg-green-700 active:shadow-lg active:text-white
+          transition
+          duration-150
+          ease-in-out
+          flex
+          items-center
+          whitespace-nowrap"
         >
           <option value="">-- Pilih provinsi --</option>
           {provinces.map((item) => (
@@ -145,7 +202,26 @@ const Check: FC = () => {
           name="kot2"
           id="kot2"
           onChange={(e) => valTujuan(e.target.value)}
-          className="w-full h-9 border border-slate-500 rounded-lg mb-1 pl-2"
+          className="dropdown-toggle
+          px-6
+          py-2.5
+          bg-green-500
+          text-white
+          font-medium
+          text-xs
+          leading-tight
+          uppercase
+          rounded
+          shadow-md
+          hover:bg-green-600 hover:shadow-lg
+          focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0
+          active:bg-green-700 active:shadow-lg active:text-white
+          transition
+          duration-150
+          ease-in-out
+          flex
+          items-center
+          whitespace-nowrap"
         >
           <option value="">-- Pilih Kota --</option>
           {cities2.map((item) => (
@@ -172,16 +248,36 @@ const Check: FC = () => {
           id="kurir"
           name="kurir"
           onChange={(e) => valKurir(e.target.value)}
-          className="w-full h-9 border border-slate-500 rounded-lg mb-5 pl-2"
+          className="dropdown-toggle
+          px-6
+          py-2.5
+          bg-green-500
+          text-white
+          font-medium
+          text-xs
+          leading-tight
+          uppercase
+          rounded
+          shadow-md
+          hover:bg-green-600 hover:shadow-lg
+          focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0
+          active:bg-green-700 active:shadow-lg active:text-white
+          transition
+          duration-150
+          ease-in-out
+          flex
+          items-center
+          whitespace-nowrap"
         >
-          <option value="">-- Pilih layanan --</option>
+          <option value="">-- Pilih Kurir --</option>
           <option value="jne">JNE</option>
           <option value="pos">POS Indonesia</option>
           <option value="tiki">TIKI</option>
         </select>
+        <h1><br /></h1>
         <button
           onClick={getCost}
-          className="text-lg bg-red-900 hover:bg-red-700 text-white p-3 rounded-xl mb-5"
+          className="inline-block px-6 py-2 border-2 border-blue-600 text-blue-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
         >
           Cek Ongkir
         </button>
@@ -192,7 +288,7 @@ const Check: FC = () => {
           {costList.map((item, index) => (
             <div
               key={index}
-              className="p-3 bg-orange-200 text-black m-1 rounded-lg"
+              className="p-3 bg-blue-200 text-black m-1 rounded-lg"
             >
               <div>
                 <div className="flex flex-column justify-between">
@@ -205,7 +301,7 @@ const Check: FC = () => {
         </div>
       </div>
     </div>
+    
   );
 };
-
 export default Check;
